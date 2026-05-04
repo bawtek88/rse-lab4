@@ -1,5 +1,8 @@
+"""import random module"""
+
 from random import random as u01
 
+# pylint: disable=unnecessary-lambda-assignment
 pi = lambda n: 4 * sum(abs(u01() + 1j * u01()) < 1 for _ in range(n)) / n
 # better accuracy
 print(pi(2**23))
